@@ -5,13 +5,13 @@ import Toolbar from "@material-ui/core/Toolbar"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
 import Logo from "./logo"
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   root: {
-      backgroundColor: theme.palette.text.secondary,
-  }
-}));
+    backgroundColor: theme.palette.text.secondary,
+  },
+}))
 
 function HideOnScroll(props) {
   const { children, window } = props
@@ -43,8 +43,8 @@ const Header = props => {
       <HideOnScroll {...props}>
         <AppBar className={classes.root}>
           <Toolbar>
-            <div style={{ minWidth: `100px`, margin: `.5rem` }}>
-              <Logo/>
+            <div style={{ minWidth: `100px`, margin: `auto` }}>
+              <Logo />
             </div>
           </Toolbar>
         </AppBar>
